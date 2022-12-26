@@ -1,5 +1,5 @@
 import { Button, Modal, Stack } from 'react-bootstrap';
-import { FiDownload, FiTrash2 } from 'react-icons/fi';
+import { FiDownload, FiMail, FiTrash2 } from 'react-icons/fi';
 import {
 	UNCATEGORIZED_BUDGET_ID,
 	useBudgets,
@@ -62,6 +62,12 @@ export default function ViewExpensesModal({
 							variant='outline-success'
 						>
 							<FiDownload />
+						</Button>
+						<Button
+							// TODO: Write a function to send the expenses as csv file to an email securely weekly every Monday
+							variant='outline-warning'
+						>
+							<FiMail />
 						</Button>
 					</Stack>
 				</Modal.Title>
